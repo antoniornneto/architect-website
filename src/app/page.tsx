@@ -14,6 +14,8 @@ import project4 from "../../assets/image 17.png";
 import project5 from "../../assets/image 18.png";
 import contact from "../../assets/image 12.png";
 import ImageButton from "@/components/ImageButton";
+import TitleSection from "@/components/ui/TitleSection";
+import TitlePage from "@/components/ui/TitlePage";
 
 export default function Home() {
   return (
@@ -21,10 +23,7 @@ export default function Home() {
       {/* hero section */}
       <div className="flex">
         <div className="flex flex-col justify-center w-96">
-          <div>
-            <h1 className="text-6xl text-[#BDBDBD] font-light">PROJECT</h1>
-            <h1 className="font-bold text-6xl">Lorum</h1>
-          </div>
+          <TitlePage text1="Digital" text2="Project" />
           <div className="flex items-center my-20">
             <div className="flex gap-5">
               <button className="w-12 h-12 flex justify-center items-center border-[1px] border-gray-300 active:bg-gray-200">
@@ -60,7 +59,7 @@ export default function Home() {
             <Image alt="foto" src={img2} />
           </div>
           <div className="flex-1 flex flex-col justify-around">
-            <h2 className="text-6xl text-[#BDBDBD] font-light">Quem Somos</h2>
+            <TitleSection>Quem Somos</TitleSection>
             <p className="font-light text-justify">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
@@ -76,7 +75,7 @@ export default function Home() {
       </div>
       {/* mission */}
       <div className="space-y-10">
-        <h2 className="text-6xl font-light text-[#BDBDBD]">Foco/Missão</h2>
+        <TitleSection>Foco/Missão</TitleSection>
         <div className="flex flex-wrap gap-20">
           <div className="flex flex-1 items-center text-justify gap-10">
             <Image alt="1" src={number1} />
@@ -96,10 +95,8 @@ export default function Home() {
         </div>
       </div>
       {/* Our Projects */}
-      <div className="space-y-5">
-        <h1 className="text-6xl font-light text-[#BDBDBD] pb-10">
-          Nossos Projetos
-        </h1>
+      <div className="space-y-10">
+        <TitleSection>Nossos Projetos</TitleSection>
         <div className="flex flex-wrap justify-between gap-2 w-full">
           <ImageButton path={project1} />
           <ImageButton path={project2} />
@@ -116,9 +113,7 @@ export default function Home() {
       </div>
       {/* Contact US */}
       <div className="space-y-10 pb-20">
-        <h1 className="text-6xl font-light text-[#BDBDBD] pb-10">
-          Fale conosco
-        </h1>
+        <TitleSection>Fale Conosco</TitleSection>
         <div className="flex gap-5">
           <form action="" className="w-[400px] flex flex-col justify-between">
             <input
