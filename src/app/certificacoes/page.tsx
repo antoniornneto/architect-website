@@ -1,8 +1,17 @@
+import Container from "@/components/Container";
+import TitlePage from "@/components/ui/TitlePage";
+import Image from "next/image";
+import selos from "../../../assets/selos.jpg";
+
 const Certificacoes = () => {
   return (
-    <main className="h-screen">
-      <h1>certificações</h1>
-    </main>
+    <Container style="space-y-10 mb-10">
+      <TitlePage text="Selos" pageName="Certificações" />
+      <hr className="w-full border-[1px] border-t-zinc-100" />
+      <div className="flex justify-center">
+        <Image alt="selos" src={selos} />
+      </div>
+    </Container>
   );
 };
 

@@ -24,7 +24,7 @@ export default function Home() {
       {/* hero section */}
       <div className="flex">
         <div className="flex flex-col justify-center w-96">
-          <TitlePage text1="Digital" text2="Project" />
+          <TitlePage text="Digital" pageName="Project" />
           <div className="flex items-center my-20">
             <div className="flex gap-5">
               <button className="w-12 h-12 flex justify-center items-center border-[1px] border-gray-300 active:bg-gray-200">

@@ -1,13 +1,15 @@
 interface TitlePageProps {
-  text1: string;
-  text2: string;
+  text: string;
+  pageName: string;
 }
 
-const TitlePage: React.FC<TitlePageProps> = ({ text1, text2 }) => {
+const TitlePage: React.FC<TitlePageProps> = ({ text, pageName }) => {
   return (
     <div>
-      <h1 className="text-6xl text-[#BDBDBD] font-light uppercase">{text2}</h1>
-      <h1 className="font-bold text-6xl">{text1}</h1>
+      <h1 className="text-6xl text-[#BDBDBD] font-light uppercase">
+        {pageName}
+      </h1>
+      <h1 className="font-bold text-6xl">{text}</h1>
     </div>
   );
 };

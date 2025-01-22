@@ -16,13 +16,10 @@ const Navbar = () => {
       <ul className="flex gap-10 items-center text-xs">
         {navLinks.map((item, index) => (
           <li
-            className="border-zinc-900 hover:border-y-[1px] px-3 text-center"
+            className="border-zinc-900 hover:border-y-[1px] px-3 text-center cursor-pointer"
             key={index}
           >
-            <Link
-              className="uppercase cursor-pointer tracking-widest "
-              href={item.path_name}
-            >
+            <Link className="uppercase tracking-widest " href={item.path_name}>
               {item.name}
             </Link>
           </li>
