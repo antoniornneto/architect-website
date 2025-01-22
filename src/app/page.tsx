@@ -16,10 +16,11 @@ import contact from "../../assets/image 12.png";
 import ImageButton from "@/components/ImageButton";
 import TitleSection from "@/components/ui/TitleSection";
 import TitlePage from "@/components/ui/TitlePage";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
-    <main className="max-w-[1280px] w-full px-16 py-10 space-y-20">
+    <Container>
       {/* hero section */}
       <div className="flex">
         <div className="flex flex-col justify-center w-96">
@@ -79,14 +80,14 @@ export default function Home() {
         <div className="flex flex-wrap gap-20">
           <div className="flex flex-1 items-center text-justify gap-10">
             <Image alt="1" src={number1} />
-            <p className="h-full flex items-center">
+            <p className="h-full flex items-center font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               efficitur, lectus et facilisis placerat.
             </p>
           </div>
           <div className="flex flex-1 items-center text-justify gap-10">
             <Image alt="2" src={number2} />
-            <p className="h-full text-wrap flex items-center">
+            <p className="h-full text-wrap flex items-center font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               efficitur, lectus et facilisis placerat, magna mauris porttitor
               tortor, a auctor est felis ut nisl.
@@ -97,7 +98,7 @@ export default function Home() {
       {/* Our Projects */}
       <div className="space-y-10">
         <TitleSection>Nossos Projetos</TitleSection>
-        <div className="flex flex-wrap justify-between gap-2 w-full">
+        <div className="flex flex-wrap justify-evenly gap-5 w-full">
           <ImageButton path={project1} />
           <ImageButton path={project2} />
           <ImageButton path={project3} />
@@ -150,6 +151,6 @@ export default function Home() {
           Enviar E-mail
         </Button>
       </div>
-    </main>
+    </Container>
   );
 }
