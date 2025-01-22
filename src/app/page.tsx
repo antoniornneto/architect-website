@@ -1,101 +1,160 @@
 import Image from "next/image";
+import projectImage from "../../assets/building.png";
+import { MoveLeft, MoveRight, Slash } from "lucide-react";
+import Button from "@/components/ui/Button";
+import img1 from "../../assets/Rectangle 8.png";
+import img2 from "../../assets/Rectangle 9.png";
+import img3 from "../../assets/Rectangle 10.png";
+import number1 from "../../assets/1.png";
+import number2 from "../../assets/2.png";
+import project1 from "../../assets/Rectangle 12.jpg";
+import project2 from "../../assets/image 15.png";
+import project3 from "../../assets/image 16.png";
+import project4 from "../../assets/image 17.png";
+import project5 from "../../assets/image 18.png";
+import contact from "../../assets/image 12.png";
+import ImageButton from "@/components/ImageButton";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="max-w-[1280px] w-full px-16 py-10 space-y-20">
+      {/* hero section */}
+      <div className="flex">
+        <div className="flex flex-col justify-center w-96">
+          <div>
+            <h1 className="text-6xl text-[#BDBDBD] font-light">PROJECT</h1>
+            <h1 className="font-bold text-6xl">Lorum</h1>
+          </div>
+          <div className="flex items-center my-20">
+            <div className="flex gap-5">
+              <button className="w-12 h-12 flex justify-center items-center border-[1px] border-gray-300 active:bg-gray-200">
+                <MoveLeft size={20} />
+              </button>
+              <button className="w-12 h-12 flex justify-center items-center border-[1px] border-gray-300 active:bg-gray-200">
+                <MoveRight size={20} />
+              </button>
+            </div>
+            <hr className="border-t-[1px] w-full" />
+          </div>
+          <div className="flex gap-5 items-center">
+            <div className="text-[#BDBDBD] tracking-widest text-2xl">01 </div>
+            <Slash color="#e0e0e0" />
+            <div className="text-[#BDBDBD] tracking-widest text-2xl">02</div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div className="relative flex-1">
+          <Image alt="Projetos" src={projectImage} className="object-cover" />
+          <Button path="/" style="absolute">
+            Visualizar Projeto
+          </Button>
+        </div>
+      </div>
+      {/* about */}
+      <div>
+        <div className="z-0 h-[435px] w-full bg-[#FBFBFB] flex py-5 px-10 gap-8">
+          <div className="z-10 flex flex-col gap-8">
+            <Image alt="foto" src={img1} />
+            <Image alt="foto" src={img3} />
+          </div>
+          <div className="flex items-center">
+            <Image alt="foto" src={img2} />
+          </div>
+          <div className="flex-1 flex flex-col justify-around">
+            <h2 className="text-6xl text-[#BDBDBD] font-light">Quem Somos</h2>
+            <p className="font-light text-justify">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+            <Button path="/">Saiba mais</Button>
+          </div>
+        </div>
+        <div className="h-[30px]"></div>
+      </div>
+      {/* mission */}
+      <div className="space-y-10">
+        <h2 className="text-6xl font-light text-[#BDBDBD]">Foco/Missão</h2>
+        <div className="flex flex-wrap gap-20">
+          <div className="flex flex-1 items-center text-justify gap-10">
+            <Image alt="1" src={number1} />
+            <p className="h-full flex items-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur, lectus et facilisis placerat.
+            </p>
+          </div>
+          <div className="flex flex-1 items-center text-justify gap-10">
+            <Image alt="2" src={number2} />
+            <p className="h-full text-wrap flex items-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur, lectus et facilisis placerat, magna mauris porttitor
+              tortor, a auctor est felis ut nisl.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* Our Projects */}
+      <div className="space-y-5">
+        <h1 className="text-6xl font-light text-[#BDBDBD] pb-10">
+          Nossos Projetos
+        </h1>
+        <div className="flex flex-wrap justify-between gap-2 w-full">
+          <ImageButton path={project1} />
+          <ImageButton path={project2} />
+          <ImageButton path={project3} />
+          <ImageButton path={project4} />
+          <ImageButton path={project5} />
+        </div>
+        <Button
+          path="/projetos"
+          style="bg-zinc-800 text-white hover:bg-white hover:text-zinc-800 place-self-end hover:border-[1px] hover:border-zinc-800"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          Todos os projetos
+        </Button>
+      </div>
+      {/* Contact US */}
+      <div className="space-y-10 pb-20">
+        <h1 className="text-6xl font-light text-[#BDBDBD] pb-10">
+          Fale conosco
+        </h1>
+        <div className="flex gap-5">
+          <form action="" className="w-[400px] flex flex-col justify-between">
+            <input
+              type="text"
+              placeholder="Nome*"
+              className="bg-[#F3F3F3] w-full p-3"
+            />
+            <input
+              type="tel"
+              placeholder="Telefone*"
+              className="bg-[#F3F3F3] w-full p-3"
+            />
+            <input
+              type="email"
+              placeholder="E-mail*"
+              className="bg-[#F3F3F3] w-full p-3"
+            />
+            <input
+              type="text"
+              placeholder="Assunto"
+              className="bg-[#F3F3F3] w-full p-3"
+            />
+            <textarea
+              placeholder="Mensagem*"
+              rows={4}
+              className="w-full bg-[#f3f3f3] p-4"
+            />
+          </form>
+          <div className="flex-1">
+            <Image alt="" src={contact} />
+          </div>
+        </div>
+        <Button style="bg-zinc-800 text-white justify-center hover:bg-white hover:text-zinc-800 hover:border-[1px] hover:border-zinc-800">
+          Enviar E-mail
+        </Button>
+      </div>
+    </main>
   );
 }
