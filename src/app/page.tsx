@@ -1,7 +1,6 @@
 import Image from "next/image";
 import projectImage from "../../assets/building.png";
 import { MoveLeft, MoveRight, Slash } from "lucide-react";
-import Button from "@/components/ui/Button";
 import img1 from "../../assets/Rectangle 8.png";
 import img2 from "../../assets/Rectangle 9.png";
 import img3 from "../../assets/Rectangle 10.png";
@@ -17,10 +16,11 @@ import ImageButton from "@/components/ImageButton";
 import TitleSection from "@/components/ui/TitleSection";
 import TitlePage from "@/components/ui/TitlePage";
 import Container from "@/components/Container";
+import LinkButton from "@/components/ui/LinkButton";
 
 export default function Home() {
   return (
-    <Container>
+    <Container style="space-y-20">
       {/* hero section */}
       <div className="flex">
         <div className="flex flex-col justify-center w-96">
@@ -44,9 +44,9 @@ export default function Home() {
         </div>
         <div className="relative flex-1">
           <Image alt="Projetos" src={projectImage} className="object-cover" />
-          <Button path="/" style="absolute">
+          <LinkButton style="absolute" path="/">
             Visualizar Projeto
-          </Button>
+          </LinkButton>
         </div>
       </div>
       {/* about */}
@@ -69,7 +69,7 @@ export default function Home() {
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <Button path="/">Saiba mais</Button>
+            <LinkButton path="/">Saiba mais</LinkButton>
           </div>
         </div>
         <div className="h-[30px]"></div>
@@ -105,12 +105,12 @@ export default function Home() {
           <ImageButton path={project4} />
           <ImageButton path={project5} />
         </div>
-        <Button
+        <LinkButton
           path="/projetos"
           style="bg-zinc-800 text-white hover:bg-white hover:text-zinc-800 place-self-end hover:border-[1px] hover:border-zinc-800"
         >
           Todos os projetos
-        </Button>
+        </LinkButton>
       </div>
       {/* Contact US */}
       <div className="space-y-10 pb-20">
@@ -147,9 +147,12 @@ export default function Home() {
             <Image alt="" src={contact} />
           </div>
         </div>
-        <Button style="bg-zinc-800 text-white justify-center hover:bg-white hover:text-zinc-800 hover:border-[1px] hover:border-zinc-800">
+        <LinkButton
+          path="/"
+          style="bg-zinc-800 text-white justify-center hover:bg-white hover:text-zinc-800 hover:border-[1px] hover:border-zinc-800"
+        >
           Enviar E-mail
-        </Button>
+        </LinkButton>
       </div>
     </Container>
   );
