@@ -78,21 +78,21 @@ export default function Home() {
         </div>
       </div>
       {/* mission */}
-      <div className="space-y-10">
+      <div className="space-y-16">
         <TitleSection>Foco/Missão</TitleSection>
-        <div className="flex gap-20 max-md:flex-col">
-          <div className="flex flex-1 items-center text-justify gap-10">
+        <div className="flex gap-20 max-lg:flex-col">
+          <div className="flex flex-1 items-center justify-center text-justify gap-10 max-md:relative">
             <Image alt="1" src={number1} />
-            <p className="h-full flex items-center font-light">
+            <p className="h-full flex items-center font-light max-md:absolute">
               Transformamos sonhos em realidade ao projetar e construir espaços
               funcionais, sustentáveis e inspiradores. Nosso compromisso é com a
               excelência, unindo criatividade, técnica e inovação em cada
               detalhe para entregar resultados que superem expectativas.
             </p>
           </div>
-          <div className="flex flex-1 items-center text-justify gap-10">
+          <div className="flex flex-1 items-center justify-center text-justify gap-10 max-md:relative">
             <Image alt="2" src={number2} />
-            <p className="h-full text-wrap flex items-center font-light">
+            <p className="h-full text-wrap flex items-center font-light max-md:absolute">
               Nossa missão é criar soluções arquitetônicas e construtivas que
               valorizem a qualidade de vida, respeitem o meio ambiente e
               reflitam a identidade de cada cliente. Buscamos transformar ideias
@@ -123,7 +123,7 @@ export default function Home() {
       <div className="space-y-10">
         <TitleSection>Fale Conosco</TitleSection>
         <div className="flex gap-5 w-full h-full">
-          <form className="min-w-[400px] flex flex-col gap-2 flex-1">
+          <form className="max-w-[400px] flex flex-col gap-2 flex-1 w-full">
             <input
               type="text"
               placeholder="Nome*"
