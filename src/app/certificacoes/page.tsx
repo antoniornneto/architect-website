@@ -5,7 +5,7 @@ import selos from "../../../assets/selos.jpg";
 
 const Certificacoes = () => {
   return (
-    <Container style="space-y-10 mb-10">
+    <Container>
       <TitlePage text="Selos" pageName="Certificações" />
       <hr className="w-full border-[1px] border-t-zinc-100" />
       <div className="flex justify-center">

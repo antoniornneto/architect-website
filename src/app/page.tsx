@@ -113,7 +113,7 @@ export default function Home() {
         </LinkButton>
       </div>
       {/* Contact US */}
-      <div className="space-y-10 pb-20">
+      <div className="space-y-10">
         <TitleSection>Fale Conosco</TitleSection>
         <div className="flex gap-5">
           <form action="" className="w-[400px] flex flex-col justify-between">

@@ -23,7 +23,7 @@ import {
 
 const Galeria = () => {
   return (
-    <Container style="space-y-10 h-screen mb-10">
+    <Container style="h-screen">
       <TitlePage text="Fotos" pageName="Galeria" />
       <hr className="w-full border-[1px] border-t-zinc-100" />
       <div className="flex justify-between gap-5 flex-wrap">

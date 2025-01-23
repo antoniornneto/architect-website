@@ -4,7 +4,7 @@ import TitlePage from "@/components/ui/TitlePage";
 
 const Contato = () => {
   return (
-    <Container style=" mb-10 flex justify-between items-center">
+    <Container style="flex justify-between items-center">
       <div className="font-light space-y-10">
         <TitlePage text="Dúvidas" pageName="Contato" />
         <div>
