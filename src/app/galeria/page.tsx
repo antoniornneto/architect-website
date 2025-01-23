@@ -23,10 +23,10 @@ import {
 
 const Galeria = () => {
   return (
-    <Container style="h-screen">
+    <Container>
       <TitlePage text="Fotos" pageName="Galeria" />
       <hr className="w-full border-[1px] border-t-zinc-100" />
-      <div className="flex justify-between gap-5 flex-wrap">
+      <div className="flex gap-5 flex-wrap">
         <Image alt="/" src={image1} />
         <Image alt="/" src={image2} />
         <Image alt="/" src={image3} />
