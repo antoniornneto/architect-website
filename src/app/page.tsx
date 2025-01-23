@@ -62,14 +62,18 @@ export default function Home() {
           <div className="flex-1 flex flex-col justify-around">
             <TitleSection>Quem Somos</TitleSection>
             <p className="font-light text-justify max-md:text-sm">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              Somos uma empresa dedicada a transformar sonhos em realidade por
+              meio de projetos arquitetônicos e soluções construtivas
+              inovadoras. Combinamos técnica, criatividade e compromisso com a
+              qualidade para entregar espaços que vão além da estética,
+              proporcionando funcionalidade e conforto. Nosso time é formado por
+              profissionais experientes e apaixonados pelo que fazem, sempre
+              atentos às necessidades e desejos de cada cliente. Valorizamos a
+              sustentabilidade e a eficiência em cada etapa do processo,
+              buscando não apenas construir, mas deixar um legado positivo para
+              as pessoas e o meio ambiente.
             </p>
-            <LinkButton path="/">Saiba mais</LinkButton>
+            <LinkButton path="/galeria">Saiba mais</LinkButton>
           </div>
         </div>
       </div>
@@ -80,16 +84,20 @@ export default function Home() {
           <div className="flex flex-1 items-center text-justify gap-10">
             <Image alt="1" src={number1} />
             <p className="h-full flex items-center font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              efficitur, lectus et facilisis placerat.
+              Transformamos sonhos em realidade ao projetar e construir espaços
+              funcionais, sustentáveis e inspiradores. Nosso compromisso é com a
+              excelência, unindo criatividade, técnica e inovação em cada
+              detalhe para entregar resultados que superem expectativas.
             </p>
           </div>
           <div className="flex flex-1 items-center text-justify gap-10">
             <Image alt="2" src={number2} />
             <p className="h-full text-wrap flex items-center font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              efficitur, lectus et facilisis placerat, magna mauris porttitor
-              tortor, a auctor est felis ut nisl.
+              Nossa missão é criar soluções arquitetônicas e construtivas que
+              valorizem a qualidade de vida, respeitem o meio ambiente e
+              reflitam a identidade de cada cliente. Buscamos transformar ideias
+              em obras que impactem positivamente as pessoas e os lugares onde
+              atuamos.
             </p>
           </div>
         </div>

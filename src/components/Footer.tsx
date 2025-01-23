@@ -7,12 +7,12 @@ import { SiFacebook, SiX, SiPinterest } from "@icons-pack/react-simple-icons";
 const Footer = () => {
   return (
     <footer className="w-full bg-[#2c2c2c] text-white">
-      <div className="flex gap-10 p-10 justify-center max-md:flex-col max-md:items-center">
-        <div>
+      <div className="flex gap-20 p-10 justify-center max-md:gap-10 max-md:flex-col max-md:items-center">
+        <div className="max-sm:hidden">
           <WhiteLogo />
         </div>
-        <div className="flex items-center h-52 gap-20">
-          <div className="flex flex-col h-full justify-between">
+        <div className="flex items-center gap-20 max-sm:flex-col max-md:h-fit max-md:gap-8">
+          <div className="flex flex-wrap flex-col h-52 justify-between">
             <p>Mapa do Site</p>
             {navLinks.map((item, index) => (
               <Link
@@ -24,11 +24,11 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <div className="flex flex-col h-full justify-between">
+          <div className="flex flex-col h-52 justify-between">
             <p>Contatos</p>
             <div className="flex gap-5 font-light text-sm">
               <MapPin />
-              <p>Rua Alameda, 1234, Vitória, ES, 29230-000</p>
+              <p>Rua Alameda, nº 1234, Vitória, ES, 29230-000</p>
             </div>
             <div className="flex gap-5 font-light text-sm">
               <Phone />
@@ -39,13 +39,13 @@ const Footer = () => {
               <p>contato@digitalproject.com</p>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center gap-5">
-          <p>Redes Sociais</p>
-          <div className="flex gap-5">
-            <SiFacebook />
-            <SiX />
-            <SiPinterest />
+          <div className="flex flex-col items-center gap-5">
+            <p>Redes Sociais</p>
+            <div className="flex gap-5">
+              <SiFacebook />
+              <SiX />
+              <SiPinterest />
+            </div>
           </div>
         </div>
       </div>
