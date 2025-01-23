@@ -114,27 +114,27 @@ export default function Home() {
       {/* Contact US */}
       <div className="space-y-10">
         <TitleSection>Fale Conosco</TitleSection>
-        <div className="flex gap-5">
-          <form action="" className="w-[400px] flex flex-col justify-between">
+        <div className="flex gap-5 w-full h-full">
+          <form className="min-w-[400px] flex flex-col gap-2 flex-1">
             <input
               type="text"
               placeholder="Nome*"
-              className="bg-[#F3F3F3] w-full p-3"
+              className="bg-[#F3F3F3] flex-1 p-3"
             />
             <input
               type="tel"
               placeholder="Telefone*"
-              className="bg-[#F3F3F3] w-full p-3"
+              className="bg-[#F3F3F3] flex-1 p-3"
             />
             <input
               type="email"
               placeholder="E-mail*"
-              className="bg-[#F3F3F3] w-full p-3"
+              className="bg-[#F3F3F3] flex-1 p-3"
             />
             <input
               type="text"
               placeholder="Assunto"
-              className="bg-[#F3F3F3] w-full p-3"
+              className="bg-[#F3F3F3] flex-1 p-3"
             />
             <textarea
               placeholder="Mensagem*"
@@ -142,8 +142,16 @@ export default function Home() {
               className="w-full bg-[#f3f3f3] p-4"
             />
           </form>
-          <div className="flex-1">
-            <Image alt="" src={contact} />
+          <div className="flex-1 max-md:hidden">
+            <div className="relative h-full">
+              <Image
+                alt="/"
+                src={contact}
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
         <LinkButton

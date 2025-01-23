@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="h-20 flex items-center max-w-[1280px] w-full justify-between px-10">
       <Logo />
-      <div className="hidden max-md:flex">
+      <div className="hidden max-md:flex pr-10">
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Menu />
@@ -37,7 +37,7 @@ const Navbar = () => {
         </DropdownMenu>
       </div>
 
-      <ul className="flex gap-10 items-center text-xs max-md:hidden">
+      <ul className="flex gap-10 items-center text-xs max-md:hidden max-lg:gap-5">
         {navLinks.map((item, index) => (
           <li
             className="border-zinc-900 hover:border-y-[1px] px-3 text-center cursor-pointer"
