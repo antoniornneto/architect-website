@@ -1,5 +1,14 @@
 import Link from "next/link";
 import Logo from "./ui/Logo";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { Menu } from "lucide-react";
 
 export const navLinks = [
   { name: "Início", path_name: "/" },
@@ -11,9 +20,24 @@ export const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="h-20 flex items-center max-w-[1280px] w-full justify-between">
+    <nav className="h-20 flex items-center max-w-[1280px] w-full justify-between px-10">
       <Logo />
-      <ul className="flex gap-10 items-center text-xs">
+      <div className="hidden max-md:flex">
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <Menu />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            {navLinks.map((item, index) => (
+              <DropdownMenuItem key={index}>
+                <Link href={item.path_name}>{item.name}</Link>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+      <ul className="flex gap-10 items-center text-xs max-md:hidden">
         {navLinks.map((item, index) => (
           <li
             className="border-zinc-900 hover:border-y-[1px] px-3 text-center cursor-pointer"
