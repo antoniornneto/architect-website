@@ -6,8 +6,8 @@ import { SiFacebook, SiX, SiPinterest } from "@icons-pack/react-simple-icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-[417px] bg-[#2C2C2C] text-white flex flex-col justify-center items-center">
-      <div className="max-w-[1280px] w-full py-10 flex-1 flex justify-around">
+    <footer className="w-full bg-[#2C2C2C] text-white flex flex-col justify-center items-center">
+      <div className="max-w-[1280px] w-full py-10 flex-1 flex justify-around max-md:flex-col max-md:items-center">
         <div>
           <WhiteLogo />
         </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import projectImage from "../../assets/building.png";
+import projectImage from "../../assets//apartment-2179337_1280.jpg";
 import { MoveLeft, MoveRight, Slash } from "lucide-react";
 import img1 from "../../assets/Rectangle 8.png";
 import img2 from "../../assets/Rectangle 9.png";
@@ -51,8 +51,8 @@ export default function Home() {
       </div>
       {/* about */}
       <div>
-        <div className="z-0 h-[435px] w-full bg-[#FBFBFB] flex py-5 px-10 gap-8">
-          <div className="z-10 flex flex-col gap-8">
+        <div className="w-full bg-[#FBFBFB] flex gap-8 p-6 justify-center">
+          <div className="flex flex-col gap-8 md:hidden lg:flex">
             <Image alt="foto" src={img1} />
             <Image alt="foto" src={img3} />
           </div>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="flex-1 flex flex-col justify-around">
             <TitleSection>Quem Somos</TitleSection>
-            <p className="font-light text-justify">
+            <p className="font-light text-justify max-md:text-sm">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s, when an unknown printer took a galley
@@ -72,12 +72,11 @@ export default function Home() {
             <LinkButton path="/">Saiba mais</LinkButton>
           </div>
         </div>
-        <div className="h-[30px]"></div>
       </div>
       {/* mission */}
       <div className="space-y-10">
         <TitleSection>Foco/Missão</TitleSection>
-        <div className="flex flex-wrap gap-20">
+        <div className="flex gap-20 max-md:flex-col">
           <div className="flex flex-1 items-center text-justify gap-10">
             <Image alt="1" src={number1} />
             <p className="h-full flex items-center font-light">
