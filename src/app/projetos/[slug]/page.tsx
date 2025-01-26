@@ -5,13 +5,7 @@ import image1 from "../../../../assets/project/image 33.png";
 import image2 from "../../../../assets/project/image 34.png";
 import image3 from "../../../../assets/project/image 35.png";
 
-interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-const project = async ({ params }: ProjectPageProps) => {
+const project = async ({ params }: { params: { slug: string } }) => {
   const { slug } = await params;
   return (
     <Container>
