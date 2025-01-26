@@ -11,15 +11,6 @@ import image7 from "../../../assets/gallery/Rectangle 28.png";
 import image8 from "../../../assets/gallery/Rectangle 29.png";
 import image9 from "../../../assets/gallery/Rectangle 30.png";
 import image10 from "../../../assets/gallery/Rectangle 31.png";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
 
 const Galeria = () => {
   return (
@@ -37,25 +28,6 @@ const Galeria = () => {
         <Image alt="/" src={image8} />
         <Image alt="/" src={image9} />
         <Image alt="/" src={image10} />
-        <Pagination className="my-5">
-          <PaginationContent>
-            <PaginationItem>
-              <PaginationPrevious href="#" />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationEllipsis />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">5</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationNext href="#" />
-            </PaginationItem>
-          </PaginationContent>
-        </Pagination>
       </div>
     </Container>
   );
