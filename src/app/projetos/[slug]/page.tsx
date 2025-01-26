@@ -7,9 +7,8 @@ import image3 from "../../../../assets/project/image 35.png";
 
 type Params = Promise<{ slug: string }>;
 
-const project = async (props: { params: Params }) => {
-  const params = await props.params;
-  const slug = params.slug;
+const project = async ({ params }: { params: Params }) => {
+  const { slug } = await params;
   return (
     <Container>
       <TitlePage text="Modelo" pageName={`Project ${slug}`} />

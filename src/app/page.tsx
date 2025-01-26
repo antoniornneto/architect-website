@@ -1,6 +1,4 @@
 import Image from "next/image";
-import projectImage from "../../assets//apartment-2179337_1280.jpg";
-import { MoveLeft, MoveRight, Slash } from "lucide-react";
 import img1 from "../../assets/Rectangle 8.png";
 import img2 from "../../assets/Rectangle 9.png";
 import img3 from "../../assets/Rectangle 10.png";
@@ -14,41 +12,15 @@ import project5 from "../../assets/image 18.png";
 import contact from "../../assets/image 12.png";
 import ImageButton from "@/components/ImageButton";
 import TitleSection from "@/components/ui/TitleSection";
-import TitlePage from "@/components/ui/TitlePage";
 import Container from "@/components/Container";
 import LinkButton from "@/components/ui/LinkButton";
+import HomeCarousel from "@/components/HomeCarousel";
 
 export default function Home() {
   return (
     <Container style="space-y-20">
       {/* hero section */}
-      <div className="flex">
-        <div className="flex flex-col justify-center w-96">
-          <TitlePage text="Digital" pageName="Project" />
-          <div className="flex items-center my-20">
-            <div className="flex gap-5">
-              <button className="w-12 h-12 flex justify-center items-center border-[1px] border-gray-300 active:bg-gray-200">
-                <MoveLeft size={20} />
-              </button>
-              <button className="w-12 h-12 flex justify-center items-center border-[1px] border-gray-300 active:bg-gray-200">
-                <MoveRight size={20} />
-              </button>
-            </div>
-            <hr className="border-t-[1px] w-full" />
-          </div>
-          <div className="flex gap-5 items-center">
-            <div className="text-[#BDBDBD] tracking-widest text-2xl">01 </div>
-            <Slash color="#e0e0e0" />
-            <div className="text-[#BDBDBD] tracking-widest text-2xl">02</div>
-          </div>
-        </div>
-        <div className="relative flex-1">
-          <Image alt="Projetos" src={projectImage} className="object-cover" />
-          <LinkButton style="absolute" path="/">
-            Visualizar Projeto
-          </LinkButton>
-        </div>
-      </div>
+      <HomeCarousel />
       {/* about */}
       <div>
         <div className="w-full bg-[#FBFBFB] flex gap-8 p-6 justify-center">
