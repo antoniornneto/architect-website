@@ -16,11 +16,14 @@ import Container from "@/components/Container";
 import LinkButton from "@/components/ui/LinkButton";
 import HomeCarousel from "@/components/HomeCarousel";
 
-export default function Home() {
+export default async function Home() {
+  const req = await fetch("http://localhost:8000/projects");
+  const res = await req.json();
+
   return (
     <Container style="space-y-20">
       {/* hero section */}
-      <HomeCarousel />
+      <HomeCarousel carouselImg={res} />
       {/* about */}
       <div>
         <div className="w-full bg-[#FBFBFB] flex gap-8 p-6 justify-center">

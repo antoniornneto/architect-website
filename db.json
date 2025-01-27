@@ -1,0 +1,65 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Arquitetura Residencial",
+      "subtitle": "Projeto de Arquitetura Residencial",
+      "image": {
+        "path": "https://cdn.pixabay.com/photo/2023/11/07/22/56/skyscraper-8373617_1280.jpg",
+        "width": 800,
+        "height": 600
+      },
+      "description": "Projeto para construção de uma residência de alto padrão, focando em sustentabilidade e conforto."
+    },
+    {
+      "id": "2",
+      "title": "Escritório Comercial",
+      "subtitle": "Reforma de Escritório Comercial",
+      "image": {
+        "path": "https://cdn.pixabay.com/photo/2024/01/25/12/54/building-8531835_1280.jpg",
+        "width": 800,
+        "height": 600
+      },
+      "description": "Reforma de um espaço comercial para adequação às necessidades de uma equipe moderna e colaborativa."
+    },
+    {
+      "id": "3",
+      "title": "Design Interiores",
+      "subtitle": "Design de Interiores para Restaurante",
+      "image": {
+        "path": "https://cdn.pixabay.com/photo/2018/03/11/13/38/munich-3216809_1280.jpg",
+        "width": 800,
+        "height": 600
+      },
+      "description": "Criação de um ambiente acolhedor e funcional para um restaurante, com ênfase no conforto e estética."
+    },
+    {
+      "id": "4",
+      "title": "Plano Urbanístico",
+      "subtitle": "Plano Urbanístico para Bairro Residencial",
+      "image": {
+        "path": "https://cdn.pixabay.com/photo/2013/09/14/19/53/city-182223_1280.jpg",
+        "width": 800,
+        "height": 600
+      },
+      "description": "Elaboração de um plano urbanístico para o desenvolvimento de um novo bairro, com infraestrutura e áreas verdes."
+    },
+    {
+      "id": "5",
+      "title": "Hotel Boutique",
+      "subtitle": "Projeto de Arquitetura para Hotel Boutique",
+      "image": {
+        "path": "https://cdn.pixabay.com/photo/2016/09/23/16/43/alley-1690053_1280.jpg",
+        "width": 800,
+        "height": 600
+      },
+      "description": "Desenvolvimento de projeto para hotel boutique, integrando luxo e modernidade em um espaço exclusivo."
+    }
+  ],
+  "galery": [
+    {
+      "id": "1",
+      "path": ""
+    }
+  ]
+}

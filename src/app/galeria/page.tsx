@@ -11,6 +11,7 @@ import image7 from "../../../assets/gallery/Rectangle 28.png";
 import image8 from "../../../assets/gallery/Rectangle 29.png";
 import image9 from "../../../assets/gallery/Rectangle 30.png";
 import image10 from "../../../assets/gallery/Rectangle 31.png";
+import ElPagination from "@/components/PaginationEl";
 
 const Galeria = () => {
   return (
@@ -29,6 +30,7 @@ const Galeria = () => {
         <Image alt="/" src={image9} />
         <Image alt="/" src={image10} />
       </div>
+      <ElPagination />
     </Container>
   );
 };
