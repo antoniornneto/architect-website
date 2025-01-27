@@ -19,6 +19,11 @@ import HomeCarousel from "@/components/HomeCarousel";
 export default async function Home() {
   const req = await fetch("http://localhost:8000/projects");
   const res = await req.json();
+  if (!res) {
+    return {
+      notFound: true,
+    };
+  }
 
   return (
     <Container style="space-y-20">
