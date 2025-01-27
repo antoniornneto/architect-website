@@ -18,9 +18,6 @@ import HomeCarousel from "@/components/HomeCarousel";
 import db from "../../db.json";
 
 export default function Home() {
-  // const req = await fetch("http://localhost:8000/projects");
-  // const res = await req.json();
-
   return (
     <Container style="space-y-20">
       {/* hero section */}
@@ -28,14 +25,14 @@ export default function Home() {
       {/* about */}
       <div>
         <div className="w-full bg-[#FBFBFB] flex gap-8 p-6 justify-center">
-          <div className="flex flex-col gap-8 md:hidden lg:flex">
+          <div className="flex flex-col gap-8 max-lg:hidden justify-center">
             <Image alt="foto" src={img1} />
             <Image alt="foto" src={img3} />
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center max-lg:hidden">
             <Image alt="foto" src={img2} />
           </div>
-          <div className="flex-1 flex flex-col justify-around">
+          <div className="flex-1 flex flex-col justify-around gap-5">
             <TitleSection>Quem Somos</TitleSection>
             <p className="font-light text-justify max-md:text-sm">
               Somos uma empresa dedicada a transformar sonhos em realidade por

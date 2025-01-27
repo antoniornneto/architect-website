@@ -5,14 +5,13 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Slash } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import { ProjectsProps } from "@/lib/utils";
+import LinkButton from "./ui/LinkButton";
 
 const HomeCarousel = ({
   carouselImg,
@@ -41,45 +40,42 @@ const HomeCarousel = ({
         setApi={setApi}
         plugins={[
           Autoplay({
-            delay: 2000,
+            delay: 3000,
           }),
         ]}
         opts={{
           align: "start",
           loop: true,
         }}
-        className="flex items-center justify-center gap-40 max-md:flex-col"
+        className="flex items-center justify-center gap-40 max-lg:flex-col max-lg:gap-10"
       >
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col gap-10">
           <TitlePage pageName="Project" text="Digital" />
           <div className="flex gap-4 text-[#bdbdbd]">
             0{current}
             <Slash />0{count}
           </div>
         </div>
+
         <div className="relative">
           <CarouselContent>
             {carouselImg.map((item, index) => (
               <CarouselItem key={index}>
                 <div className="p-1">
-                  <div className="overflow-hidden">
+                  <div className="overflow-hidden relative">
                     <Image
                       src={item.image.path}
                       alt="/"
                       width={item.image.width}
                       height={item.image.height}
-                      className="aspect-[5/4] w-full object-cover"
+                      className="aspect-[5/4] w-full object-cover lg:aspect-[16/9]"
                     />
                   </div>
+                  <LinkButton style="absolute">Ver Projeto</LinkButton>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-        </div>
-
-        <div className="absolute left-0 bottom-40 flex gap-10 w-[200px]">
-          <CarouselPrevious className="static rounded-none w-full translate-x-0 translate-y-0" />
-          <CarouselNext className="static rounded-none w-full translate-x-0 translate-y-0" />
         </div>
       </Carousel>
     </div>

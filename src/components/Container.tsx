@@ -7,7 +7,9 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ children, style }) => {
   return (
-    <main className={`${style} max-w-[1280px] w-full p-10 space-y-10`}>
+    <main
+      className={`${style} max-w-[1280px] w-full p-10 space-y-10 max-md:px-3`}
+    >
       {children}
     </main>
   );
