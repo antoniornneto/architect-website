@@ -15,20 +15,16 @@ import TitleSection from "@/components/ui/TitleSection";
 import Container from "@/components/Container";
 import LinkButton from "@/components/ui/LinkButton";
 import HomeCarousel from "@/components/HomeCarousel";
+import db from "../../db.json";
 
-export default async function Home() {
-  const req = await fetch("http://localhost:8000/projects");
-  const res = await req.json();
-  if (!res) {
-    return {
-      notFound: true,
-    };
-  }
+export default function Home() {
+  // const req = await fetch("http://localhost:8000/projects");
+  // const res = await req.json();
 
   return (
     <Container style="space-y-20">
       {/* hero section */}
-      <HomeCarousel carouselImg={res} />
+      <HomeCarousel carouselImg={db.projects} />
       {/* about */}
       <div>
         <div className="w-full bg-[#FBFBFB] flex gap-8 p-6 justify-center">

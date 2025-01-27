@@ -12,22 +12,12 @@ import Autoplay from "embla-carousel-autoplay";
 import { Slash } from "lucide-react";
 import React from "react";
 import Image from "next/image";
-
-type CarouselProps = {
-  id: string;
-  title: string;
-  image: {
-    path: string;
-    width: number;
-    height: number;
-  };
-  description: string;
-};
+import { ProjectsProps } from "@/lib/utils";
 
 const HomeCarousel = ({
   carouselImg,
 }: {
-  carouselImg: Array<CarouselProps>;
+  carouselImg: Array<ProjectsProps>;
 }) => {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
