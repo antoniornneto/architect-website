@@ -7,6 +7,10 @@ import image3 from "../../../../assets/project/image 35.png";
 
 type Params = Promise<{ slug: string }>;
 
+export function generateStaticParams() {
+  return [{ slug: "projetos" }];
+}
+
 const project = async ({ params }: { params: Params }) => {
   const { slug } = await params;
   return (
