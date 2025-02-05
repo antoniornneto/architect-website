@@ -71,7 +71,9 @@ const HomeCarousel = ({
                       className="aspect-[5/4] w-full object-cover lg:aspect-[16/9]"
                     />
                   </div>
-                  <LinkButton style="absolute">Ver Projeto</LinkButton>
+                  <LinkButton path={`/projetos/${item.id}`} style="absolute">
+                    Ver Projeto
+                  </LinkButton>
                 </div>
               </CarouselItem>
             ))}
