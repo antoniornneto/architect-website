@@ -4,11 +4,6 @@ import img2 from "../../assets/Rectangle 9.png";
 import img3 from "../../assets/Rectangle 10.png";
 import number1 from "../../assets/1.png";
 import number2 from "../../assets/2.png";
-import project1 from "../../assets/Rectangle 12.jpg";
-import project2 from "../../assets/image 15.png";
-import project3 from "../../assets/image 16.png";
-import project4 from "../../assets/image 17.png";
-import project5 from "../../assets/image 18.png";
 import contact from "../../assets/image 12.png";
 import ImageButton from "@/components/ImageButton";
 import TitleSection from "@/components/ui/TitleSection";
@@ -78,12 +73,17 @@ export default function Home() {
       {/* Our Projects */}
       <div className="space-y-10">
         <TitleSection>Nossos Projetos</TitleSection>
-        <div className="flex flex-wrap justify-evenly gap-5 w-full">
-          <ImageButton path={project1} />
-          <ImageButton path={project2} />
-          <ImageButton path={project3} />
-          <ImageButton path={project4} />
-          <ImageButton path={project5} />
+        <div className="flex flex-wrap gap-4 w-full">
+          {db.projects.map((project) => (
+            <ImageButton
+              width={project.image.width}
+              height={project.image.height}
+              key={project.id}
+              path={project.id}
+              image={project.image.path}
+              title={project.title}
+            />
+          ))}
         </div>
         <LinkButton
           path="/projetos"

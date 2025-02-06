@@ -61,7 +61,7 @@ const HomeCarousel = ({
           <CarouselContent>
             {carouselImg.map((item, index) => (
               <CarouselItem key={index}>
-                <div className="p-1">
+                <div>
                   <div className="overflow-hidden relative">
                     <Image
                       src={item.image.path}
